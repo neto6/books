@@ -1,8 +1,8 @@
 # books
 
-problema
-requisitos
-casos de uso
-diagrama de classes (DER)
+- problema
+- requisitos
+- casos de uso
+- diagrama de classes (DER)
 
-grupo de 2 ou 3 alunos
+- grupo de 2 ou 3 alunos
