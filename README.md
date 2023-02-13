@@ -1,7 +1,7 @@
 # books
 
 - problema
-- requisitos
+- requisitos (olhar api da good reads)
 - casos de uso
 - diagrama de classes (DER)
 
