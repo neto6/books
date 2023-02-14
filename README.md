@@ -1,7 +1,9 @@
 # books
 
 - problema
-- requisitos (olhar api da good reads)
+- solução do problema
+- requisitos funcionais e não (olhar api da good reads)
+- regras de negócio
 - casos de uso
 - diagrama de classes (DER)
 
