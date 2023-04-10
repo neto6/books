@@ -14,8 +14,10 @@
 	- Lista de livros que quer ler.
 	- Gerenciamento de avaliações de livros.
 - Requisitos não Funcionais
-	- Front-end web em React JS;
-	- Back-end sendo API Restfull (possibilidade de criar APP mobile futuramente).
+	- ~Front-end web em React JS;~
+	- ~Back-end sendo API Restfull (possibilidade de criar APP mobile futuramente).~
+	- Desenvolvimento para Web com PHP
+	- Banco de dados Relacional
 - Regras de Negócio
 	- Usuários devem ter e-mail e username únicos;
 	- Os nomes de novos livros devem ser únicos no sistema;
