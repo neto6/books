@@ -16,7 +16,7 @@ $livros = $lista->livros;
 <div class="container mt-3">
   <h2><?php echo $nome ?></h2>
   <h5>Livros</h5>
-  <?php foreach($livros as $liv) {echo "$liv[0] ($liv[1])<br>";} ?>
+  <?php if (count($livros) == 0) echo "Ainda não há livros nesta lista."; else foreach($livros as $liv) {echo show_book("$liv[0] ($liv[1])<br>");} ?>
 </div>
 
 <?php

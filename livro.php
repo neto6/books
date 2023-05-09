@@ -23,12 +23,25 @@ $listas = $usuario->recuperaListas();
   <h2><?php echo $nome ?></h2>
   <h4>Autor</h4>
   <h2><?php echo $autor ?></h2>
-  <a class="btn btn-warning" href="favorito.php?livro_id=<?php echo $livro_id ?>">Marcar como favorito</a>
-  <a class="btn btn-primary" href="possui.php?livro_id=<?php echo $livro_id ?>">Marcar que possui</a>
-  <a class="btn btn-primary" href="leu.php?livro_id=<?php echo $livro_id ?>">Marcar que leu</a>
-  <a class="btn btn-primary" href="quer_ler.php?livro_id=<?php echo $livro_id ?>">Marcar quer ler</a>
+  <br />
+  <a class="btn btn-warning" href="favorito.php?livro_id=<?php echo $livro_id ?>">Favorito</a>
+  <a class="btn btn-primary" href="possui.php?livro_id=<?php echo $livro_id ?>">Possuo</a>
+  <a class="btn btn-primary" href="leu.php?livro_id=<?php echo $livro_id ?>">Já li</a>
+  <a class="btn btn-primary" href="quer_ler.php?livro_id=<?php echo $livro_id ?>">Quero ler</a>
   <a class="btn btn-primary" href="avaliar.php?livro_id=<?php echo $livro_id ?>">Avaliar</a>
-  <?php foreach($listas as $lis) {echo "<br><a href=\"adicionar_lista.php?lista_id=$lis[1]&livro_id=$livro_id\">Adicionar a $lis[0]</a>";} ?>
+  <br />
+  <?php foreach($listas as $lis) {echo "<br><a class=\"btn btn-secondary\" href=\"adicionar_lista.php?lista_id=$lis[1]&livro_id=$livro_id\">Adicionar a $lis[0]</a>";} ?>
+  <br />
+  <br />
+
+  <h4>Reviews</h4>
+
+  <form>
+    <textarea></textarea>
+    <br />
+    <input type="submit" value="Adicionar Review"/>
+  </form>
+
 </div>
 
 <?php

@@ -12,10 +12,6 @@ $quer_ler = $usuario->recuperaQuerLer();
 $listas = $usuario->recuperaListas();
 $avaliacoes = $usuario->recuperaAvaliacoes();
 
-function show_book($book) {
-  return "<div style=\"height:150px;width:120px;border:1px solid black;text-align:center;float:left;margin-right:10px;margin-bottom:10px;\">$book</div>";
-}
-
 ?>
 
 <div class="container mt-3">
