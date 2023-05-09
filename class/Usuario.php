@@ -47,6 +47,20 @@ class Usuario {
         
     }
 
+    public function recuperaDados() {
+        global $conn;
+
+        $usuario_id = $this->usuario_id;
+
+        $sql = "SELECT nome, email FROM t_usuarios WHERE usuario_id = '$usuario_id'";
+
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+        
+        $this->email = $row['email'];
+        $this->nome = $row['nome'];
+    }
+
     public function recuperaFavoritos() {
         global $conn;
         $usuario_id = $this->usuario_id;
