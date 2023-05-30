@@ -1,10 +1,5 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "books";
-
 $servername = getenv('MYSQLHOST');
 $username = getenv('MYSQLUSER');
 $password = getenv('MYSQLPASSWORD');
