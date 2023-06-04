@@ -38,7 +38,7 @@ $listas = $usuario->recuperaListas();
   <div>
   <?php
     $sql = "SELECT * FROM t_reviews rev
-            INNER JOIN t_usuarios usu ON rev.usuario_id = rev.usuario_id
+            INNER JOIN t_usuarios usu ON rev.usuario_id = usu.usuario_id
             WHERE livro_id = '$livro_id'";
 
     $result = $conn->query($sql);
