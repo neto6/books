@@ -26,5 +26,5 @@
 	- Usuários só podem favoritar livros que já leram;
 	- Usuário não pode ter o mesmo livro na lista dos que já leu e quer ler ao mesmo tempo.
 
-##v0.2
+## v0.2
 - Adicionar reviews
