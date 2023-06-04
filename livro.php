@@ -36,8 +36,8 @@ $listas = $usuario->recuperaListas();
 
   <h4>Reviews</h4>
 
-  <form>
-    <textarea></textarea>
+  <form action="salvar_review.php" method="post">
+    <textarea name="review"></textarea>
     <br />
     <input type="submit" value="Adicionar Review"/>
   </form>
