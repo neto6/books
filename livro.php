@@ -48,7 +48,7 @@ $listas = $usuario->recuperaListas();
     }
     else {
       while ($row = $result->fetch_assoc()) {
-        echo $row['nome'].":<br>";
+        echo "<h4>".$row['nome'].":</h4><br>";
         echo $row['texto']."<br><br>";
       }
     }
