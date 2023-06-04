@@ -1,5 +1,6 @@
 # books
 
+## v0.1
 - Problema
 	- Necessidade de leitores de compartilhar os livros que possuem, que já leram ou querem ler.
 - Proposta de Solução
@@ -24,3 +25,6 @@
 	- Usuários só podem avaliar livros que já leram;
 	- Usuários só podem favoritar livros que já leram;
 	- Usuário não pode ter o mesmo livro na lista dos que já leu e quer ler ao mesmo tempo.
+
+##v0.2
+- Adicionar reviews
