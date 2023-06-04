@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows <= 0) {
 
-    $sql = "INSERT INTO t_reviews (usuario_id, livro_id, texto) VALUES ('$usuario_id', '$livro_id', '$texto')";
+    $sql = "INSERT INTO t_reviews (usuario_id, livro_id, texto) VALUES ('$usuario_id', '$livro_id', '$review')";
     $conn->query($sql);
     header('location: livro.php?livro_id='.$livro_id);
 

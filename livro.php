@@ -35,8 +35,29 @@ $listas = $usuario->recuperaListas();
   <br />
 
   <h4>Reviews</h4>
+  <div>
+  <?php
+    $sql = "SELECT * FROM t_reviews rev
+            INNER JOIN t_usuarios usu ON rev.usuario_id = rev.usuario_id
+            WHERE livro_id = '$livro_id'";
 
-  <form action="salvar_review.php" method="post">
+    $result = $conn->query($sql);
+
+    if ($result->num_rows <= 0) {
+      echo "Esse livro ainda não possui reviews.";
+    }
+    else {
+      while ($row = $result->fetch_assoc()) {
+        echo $row['nome'].":<br>";
+        echo $row['texto']."<br><br>";
+      }
+    }
+    
+
+  ?>
+  </div>
+
+  <form action="salvar_review.php?livro_id=<?php echo $livro_id; ?>" method="post">
     <textarea name="review"></textarea>
     <br />
     <input type="submit" value="Adicionar Review"/>
