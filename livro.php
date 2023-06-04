@@ -34,7 +34,7 @@ $listas = $usuario->recuperaListas();
   <br />
   <br />
 
-  <h4>Reviews</h4>
+  <h4>Reviews</h4><br>
   <div>
   <?php
     $sql = "SELECT * FROM t_reviews rev
@@ -48,7 +48,7 @@ $listas = $usuario->recuperaListas();
     }
     else {
       while ($row = $result->fetch_assoc()) {
-        echo "<h4>".$row['nome'].":</h4><br>";
+        echo "<h4>".$row['nome'].":</h4>";
         echo $row['texto']."<br><br>";
       }
     }
